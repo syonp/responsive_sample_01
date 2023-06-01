@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+#wrap {
+    width: 84%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background: #ff69b4;
+    color: #FFF;
+  padding: 20px;
+}
+
+.main-menu {
+    background: #ffc0cb;
+}
+.main-menu ul {
+    display: flex;
+    justify-content:flex-end ;
+  }
+
+  .main-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+  }
+  .main-menu ul li a:hover {
+    background: #ddd;
+  }
+  main {
+    display: flex;
+article img{
+     float:left;
+}
+  }
+
+section {
+    background: #EEE;
+    flex: 3;
+    padding: 20px;
+}
+
+article {
+    background: #FFF;
+    padding: 20px;
+  margin-bottom: 20px;
+}
+article img {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+aside {
+    background: #DDD;
+}
+
+.sub-menu {
+    background: #DDD;
+}
+.sub-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 20px 30px;
+  }
+  .sub-menu ul li a:hover {
+    background: #ffc0cb;
+  }
+
+footer {
+    background: #ffc0cb;
+    flex: 1;
+    color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+  #wrap {
+    width: 100%;
+  }
+}
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .main-menu ul {
+    /* display: block; */
+    flex-direction: unset;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+}
+
